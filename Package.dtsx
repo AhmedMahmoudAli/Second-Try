@@ -1,0 +1,1119 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/13/2025 2:00:01 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DMC-AHMED"
+  DTS:CreatorName="BBI-CONSULTANCY\ahmed.ali"
+  DTS:DTSID="{9A2298A0-275F-42A3-812A-8B2ED42F82D8}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{C6F73C15-8687-4F1E-B7C6-78164E08E430}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F865AEC6-6B23-48A1-9ED1-C9A5B7088ABD}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:Unicode="True"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Ahmed.Ali\Desktop\MOEI\Test SSIS.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="AppStartDate"
+              DTS:DTSID="{DE1A4870-4C97-433F-B79C-989D673DA862}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="101"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ApplicationNumber"
+              DTS:DTSID="{0AB20077-73CB-4280-886C-5D8212C29BDC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Created"
+              DTS:DTSID="{98757450-B96B-42AC-8CF4-01BEE369CC13}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="135"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Modified"
+              DTS:DTSID="{CB107C76-E001-4307-B0E5-9842A369A4B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DeviceType"
+              DTS:DTSID="{F0DA9E8E-A074-4BE7-87EB-3F098CC84671}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="150"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BackOfficeEmployee"
+              DTS:DTSID="{22D2918C-3E4C-4FFC-8F12-C493A35C26FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IPAddress"
+              DTS:DTSID="{3FB1278C-6457-4EFE-B2AE-98D578BBE271}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CreatedYear"
+              DTS:DTSID="{3BE8BE5B-F345-4C50-8F34-4ED56D0AF9DF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="300"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Status"
+              DTS:DTSID="{5C08669A-3463-4150-A947-35A53624A800}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="250"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ServiceName"
+              DTS:DTSID="{434580A4-E679-4908-8D24-78BF850D1D2D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EntityName"
+              DTS:DTSID="{5778EED7-07C1-41CC-B49D-21BAE3AAA928}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="KPI_Days"
+              DTS:DTSID="{454370A6-2010-4CFC-BBE0-2514F0E3FD2E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NationalID"
+              DTS:DTSID="{9F57F255-251F-4033-A39B-15B82B99CA07}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Nationality"
+              DTS:DTSID="{9B7A6D90-F432-4FB2-97D8-CE4988134F34}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IsPmo_Confirmed"
+              DTS:DTSID="{72457601-BD88-480F-AD72-B749512B9D53}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Hour"
+              DTS:DTSID="{909091EC-229B-4776-B8BD-E49F05F0B7B2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MOEI]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{E657F559-4EEB-4802-991E-9F56B04BFB70}"
+      DTS:ObjectName="MOEI">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=172.20.1.136;User ID=bbi.ahmed;Initial Catalog=;Provider=MSOLEDBSQL.1;Persist Security Info=False;Initial File Name=;Server SPN=;Authentication=;Access Token=;Application Name=SSIS-Package-{E657F559-4EEB-4802-991E-9F56B04BFB70}172.20.1.136.bbi.ahmed;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeINlMzelK0er6xLjezhJ1AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAjrk/uKVxbEyuSkJ0a4hE0+28RymHDiDDl8JmrZxHKSAAAAAAOgAAAAAIAACAAAADBaPvV1GDwuc1JMly9L8UxaapZHsg8KTJ9y3tRiNynPDAAAACm3E4eblxTufrTkupv6dVusfcNkl5YNbWMz0PuvnJaoL/IImigbA/NfX+4NyUmxelAAAAAjKBXsCgtvH+/4SMHZycD+3/GYhz3+f5o5R600R7loYTgA1512ErTzN2o08VuoplY6RlTL9Uu0fnuyqSv7NGKkA</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{703B1250-4C9A-46D1-BD65-F41CB8D4F7E6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[AppStartDate]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="AppStartDate"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AppStartDate]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[AppStartDate]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ApplicationNumber]"
+                      cachedDataType="wstr"
+                      cachedLength="101"
+                      cachedName="ApplicationNumber"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ApplicationNumber]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ApplicationNumber]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Created]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Created"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Created]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Created]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Modified]"
+                      cachedDataType="dbTimeStamp"
+                      cachedName="Modified"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Modified]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Modified]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[DeviceType]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="DeviceType"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DeviceType]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[DeviceType]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[BackOfficeEmployee]"
+                      cachedDataType="wstr"
+                      cachedLength="150"
+                      cachedName="BackOfficeEmployee"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[BackOfficeEmployee]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[BackOfficeEmployee]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[IPAddress]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="IPAddress"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[IPAddress]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IPAddress]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[CreatedYear]"
+                      cachedDataType="i4"
+                      cachedName="CreatedYear"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CreatedYear]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreatedYear]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Status]"
+                      cachedDataType="wstr"
+                      cachedLength="300"
+                      cachedName="Status"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Status]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Status]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[ServiceName]"
+                      cachedDataType="wstr"
+                      cachedLength="250"
+                      cachedName="ServiceName"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ServiceName]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ServiceName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[EntityName]"
+                      cachedDataType="wstr"
+                      cachedLength="25"
+                      cachedName="EntityName"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EntityName]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[EntityName]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[KPI_Days]"
+                      cachedDataType="i4"
+                      cachedName="KPI_Days"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[KPI_Days]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[KPI_Days]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[NationalID]"
+                      cachedDataType="i8"
+                      cachedName="NationalID"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NationalID]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[NationalID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Nationality]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="Nationality"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Nationality]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nationality]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[IsPmo_Confirmed]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="IsPmo_Confirmed"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[IsPmo_Confirmed]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IsPmo_Confirmed]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].Columns[Hour]"
+                      cachedDataType="i4"
+                      cachedName="Hour"
+                      externalMetadataColumnId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Hour]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hour]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[AppStartDate]"
+                      dataType="dbTimeStamp"
+                      name="AppStartDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ApplicationNumber]"
+                      dataType="wstr"
+                      length="101"
+                      name="ApplicationNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Created]"
+                      dataType="dbTimeStamp"
+                      name="Created" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Modified]"
+                      dataType="dbTimeStamp"
+                      name="Modified" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[DeviceType]"
+                      dataType="wstr"
+                      length="50"
+                      name="DeviceType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[BackOfficeEmployee]"
+                      dataType="wstr"
+                      length="150"
+                      name="BackOfficeEmployee" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[IPAddress]"
+                      dataType="wstr"
+                      length="50"
+                      name="IPAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[CreatedYear]"
+                      dataType="i4"
+                      name="CreatedYear" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Status]"
+                      dataType="wstr"
+                      length="300"
+                      name="Status" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ServiceName]"
+                      dataType="wstr"
+                      length="250"
+                      name="ServiceName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[EntityName]"
+                      dataType="wstr"
+                      length="25"
+                      name="EntityName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[KPI_Days]"
+                      dataType="i4"
+                      name="KPI_Days" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[NationalID]"
+                      dataType="i8"
+                      name="NationalID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Nationality]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="Nationality" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[IsPmo_Confirmed]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="IsPmo_Confirmed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Hour]"
+                      dataType="i4"
+                      name="Hour" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Source"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">-- the transformations on eservices_szhp
+
+WITH TransformedData AS (
+    SELECT
+        -- Direct column renames
+        CreatedDate AS AppStartDate,
+        RequestSubmitDate AS Created,
+        CompletionDate AS Modified,
+        CreatorTypeAra AS DeviceType,
+        AgentName AS BackOfficeEmployee,
+        IPAddress AS IPAddress, -- Final name after renames in Power Query
+        CurrentStateAra AS StatusSource,
+        ServiceNameAr AS ServiceNameSource,
+        IDNumber AS NationalID,
+        ETransactionId,
+ 
+        -- ApplicationNumber logic: Combine ApplicationID and ETransactionId
+        CASE
+            WHEN ApplicationID IS NOT NULL THEN
+                CONCAT(CAST(ApplicationID AS NVARCHAR(50)), '-', CAST(ETransactionId AS NVARCHAR(50)))
+            ELSE
+                CAST(ETransactionId AS NVARCHAR(50))
+        END AS ApplicationNumber,
+ 
+        -- Static value
+        N'برنامج الشيخ زايد للإسكان' AS EntityName,
+ 
+        -- Year and Hour from Created
+        DATEPART(YEAR, RequestSubmitDate) AS CreatedYear,
+        DATEPART(HOUR, RequestSubmitDate) AS Hour,
+ 
+        -- Trim and standardize ServiceName
+        LTRIM(RTRIM(
+            CASE
+			    WHEN ServiceNameAr = N'تقديم تظلم عن مقدار مبلغ المساعدة السكنية' THEN N'إعادة النظر في قرار المساعدة السكنية'
+			    WHEN ServiceNameAr = N'طلب دعم سكني جديد' THEN N'طلب المساعدة السكنية'
+			    WHEN ServiceNameAr = N'طلبات الاستلام الابتدائي' THEN N'طلب الإستلام الإبتدائي للمساكن الفردية'
+			    WHEN ServiceNameAr = N'تحديث بيانات طلب الدعم السكني' THEN N'تحديث بيانات المساعدة السكنية'
+			    WHEN ServiceNameAr = N'طلب تسجيل الموردين' THEN N'خدمة طلب تسجيل مورد جديد'
+			    WHEN ServiceNameAr = N'طلبات إسناد الصيانة' THEN N'إسناد الصيانة'
+			    WHEN ServiceNameAr = N'طلبات الإيقاف المؤقت' THEN N'إيقاف مؤقت'
+			    WHEN ServiceNameAr = N'طلبات الزيارة الميدانية للمشروع' THEN N'الزيارة الميدانية للمشروع'
+			    WHEN ServiceNameAr = N'طلبات إنهاء التعاقد' THEN N'طلب إنهاء تعاقد'
+			    WHEN ServiceNameAr = N'طلب تجديد المقاولين والاستشاريين' THEN N'طلب تجديد استشاري/مقاول'
+			    WHEN ServiceNameAr = N'طلب تسجيل المقاولين والاستشاريين' THEN N'طلب تسجيل جديد لمقاول/طلب تسجيل جديد لاستشاري'
+			    WHEN ServiceNameAr = N'طلبات تغيير قيمة العقد' THEN N'طلب تعديل قيمة العقد'
+			    WHEN ServiceNameAr = N'طلبات تغيير مقاول' THEN N'طلب تغيير مقاول'
+			    WHEN ServiceNameAr = N'طلبات دفعات المشاريع' THEN N'طلب تقديم دفعات المساكن الفردية'
+			    WHEN ServiceNameAr = N'طلب رسالة إلى من يهمه الأمر' THEN N'طلب إصدار شهادة لمن يهمه الأمر لخدمات الإسكان'
+			    WHEN ServiceNameAr = N'رسالة بالقرار الصادر' THEN N'رسالة الموافقة'
+			    WHEN ServiceNameAr = N'طلب استكمال الوثائق والبيانات للمتقدمين' THEN N'طلب استكمال الوثائق والبيانات'
+			    WHEN ServiceNameAr = N'طلب زيارة طارئة' THEN N'طلب زيارة طارئة لمسكن'
+			    WHEN ServiceNameAr = N'طلب تأجيل اقساط' THEN N'تخفيض أو تأجيل قسط المساعدة السكنية'
+			    WHEN ServiceNameAr = N'فتح ملف' THEN N'طلب فتح ملف تنفيذ مساعدة سكنية'
+			    WHEN ServiceNameAr = N'طلب خفض قسط' THEN N'تخفيض أو تأجيل قسط المساعدة السكنية'
+			    WHEN ServiceNameAr = N'طلب زيارة طارئة للمسكن' THEN N'طلب زيارة طارئة لمسكن'
+			    WHEN ServiceNameAr = N'طلب التصرف في مساكن المنح' THEN N'طلب التصرف في مسكن'
+			    WHEN ServiceNameAr = N'طلب الغاء طلب مساعدة سكنية' THEN N'طلب الغاء المساعدة السكنية'
+			    WHEN ServiceNameAr = N'طلب تمليك المساكن الحكومية' THEN N'تمليك المساكن الحكومية'
+			    WHEN ServiceNameAr = N'طلب إعفاء من قرض المساعدة السكنية' THEN N'إعفاء من قرض المساعدة السكنية'
+			    WHEN ServiceNameAr = N'طلب إعادة جدولة المتأخرات للمساعدة السكنية' THEN N'إعادة جدولة المتأخرات للمساعدة السكنية'
+			    ELSE ServiceNameAr
+            END
+        )) AS ServiceName,
+ 
+        -- Translate Status from Arabic to standardized values
+        LTRIM(RTRIM(
+            CASE
+			    WHEN CurrentStateAra = N'تم إلغاء طلب المساعدة' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'مرفوضة الطلب' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'مرتجعة الطلب من اللجنة لطلب معلومات' THEN 'Returned'
+			    WHEN CurrentStateAra = N'ملغي لانقضاء المدة المحددة' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'أصدر القرار-مرفوضة' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'تم إلغاء الطلب' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'مرفوض' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'تم رفض الطلب' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'رفض' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'تم رفض التقرير' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'تم التدقيق' THEN 'Completed'
+			    WHEN CurrentStateAra = N'مكتملة' THEN 'Completed'
+			    WHEN CurrentStateAra = N'مكتمل' THEN 'Completed'
+			    WHEN CurrentStateAra = N'تمت الموافقة على الطلب، يرجى التواصل مع مصرف الإمارات للتنمية لمزيد من المعلومات' THEN 'Completed'
+			    WHEN CurrentStateAra = N'قيد التدقيق' THEN 'InProgress'
+			    WHEN CurrentStateAra = N'تم الإنشاء' THEN 'InProgress'
+			    WHEN CurrentStateAra = N'تم الإجراء' THEN 'InProgress'
+			    WHEN CurrentStateAra = N'اعتماد' THEN 'Completed'
+			    WHEN CurrentStateAra = N'اعتمده' THEN 'Completed'
+			    WHEN CurrentStateAra = N'أرسل إلى المصرف' THEN 'Completed'
+			    WHEN CurrentStateAra = N'تم اعتماد الطلب' THEN 'Completed'
+			    WHEN CurrentStateAra = N'تم قبول المقاول' THEN 'Completed'
+			    WHEN CurrentStateAra = N'تم إنشاء تقرير' THEN 'Completed'
+			    WHEN CurrentStateAra = N'أرسلت الى المالية' THEN 'InProgress'
+			    WHEN CurrentStateAra = N'إرجاع' THEN 'Returned'
+			    WHEN CurrentStateAra = N'إرجاع إلى المنتفع' THEN 'Returned'
+			    WHEN CurrentStateAra = N'جاهز للتدقيق' THEN 'InProgress'
+			    WHEN CurrentStateAra = N'مرتجعة من المالية' THEN 'Returned'
+			    WHEN CurrentStateAra = N'مرتجعة من قسم التحصيل' THEN 'Returned'
+			    WHEN CurrentStateAra = N'Returned إلى المنتفع' THEN 'Returned'
+			    WHEN CurrentStateAra = N'إرسال الى المصرف' THEN 'Completed'
+			    WHEN CurrentStateAra = N'تم الإعتماد' THEN 'Completed'
+			    WHEN CurrentStateAra = N'أصدر القرار-حاصل' THEN 'Completed'
+			    WHEN CurrentStateAra = N'تمت الموافقة من قبل العميل' THEN 'Completed'
+			    WHEN CurrentStateAra = N'جاهز للزيارة الميدانية' THEN 'InProgress'
+			    WHEN CurrentStateAra = N'إرسال إتفاقية إعادة جدولة الأقساط المتأخرة  ' THEN 'InProgress'
+			    WHEN CurrentStateAra = N'Rejected الطلب' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'Returned الطلب من اللجنة لطلب معلومات' THEN 'Returned'
+			    WHEN CurrentStateAra = N'أصدر القرار-Rejected' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'جديد' THEN 'InProgress'
+			    WHEN CurrentStateAra = N'أصدر القرار-مرفوض' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'إرجاع الطلب من اللجنة لطلب معلومات' THEN 'Returned'
+			    WHEN CurrentStateAra = N'طلب المساعدة قرار ملغى' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'رفض الطلب' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'توصية اللجنة' THEN 'InProgress'
+			    WHEN CurrentStateAra = N'تم الإلغاء' THEN 'Rejected'
+			    WHEN CurrentStateAra = N'قيد الدراسة' THEN 'InProgress'
+			    ELSE CurrentStateAra
+            END
+        )) AS Status,
+ 
+        -- KPI_Days based on ServiceName
+        CASE
+		    WHEN ServiceNameAr = N'طلب إصدار شهادة لمن يهمه الأمر لخدمات الإسكان' THEN 1  
+		    WHEN ServiceNameAr = N'طلب إعادة جدولة متأخرات المساعدة السكنية' THEN 10
+		    WHEN ServiceNameAr = N'طلب تخفيض أو تأجيل قسط المساعدة السكنية' THEN 15
+		    WHEN ServiceNameAr = N'إعادة النظر في قرار المساعدة السكنية' THEN 10
+		    WHEN ServiceNameAr = N'طلب الغاء المساعدة السكنية' THEN 5
+		    WHEN ServiceNameAr = N'طلب المساعدة السكنية' THEN 90
+		    WHEN ServiceNameAr = N'تحديث بيانات المساعدة السكنية' THEN 1                       
+		    WHEN ServiceNameAr = N'طلب زيارة طارئة لمسكن' THEN 7
+		    WHEN ServiceNameAr = N'طلب فتح ملف تنفيذ مساعدة سكنية' THEN 1
+		    WHEN ServiceNameAr = N'طلب الإستلام الإبتدائي للمساكن الفردية' THEN 9
+		    WHEN ServiceNameAr = N'طلب اعفاء من قرض المساعدة السكنية' THEN 25
+		    WHEN ServiceNameAr = N'طلب تمليك المساكن الحكومية' THEN 30
+		    ELSE 0
+        END AS KPI_Days,    -- seham says here that we can ignore that column
+ 
+        -- Nationality logic
+        CASE
+            WHEN ServiceNameAr &lt;&gt; N'طلب الإستلام الإبتدائي للمساكن الفردية' THEN 'UAE'
+            ELSE NULL
+        END AS Nationality,
+ 
+        -- IsPmo_Confirmed flag
+        CASE
+            WHEN ServiceNameAr IN (
+		        N'طلب المساعدة السكنية',
+		        N'طلب فتح ملف تنفيذ مساعدة سكنية',
+		        N'تحديث بيانات المساعدة السكنية',
+		        N'إعادة النظر في قرار المساعدة السكنية',
+		        N'طلب إصدار شهادة لمن يهمه الأمر لخدمات الإسكان',
+		        N'إعفاء من قرض المساعدة السكنية',
+		        N'تخفيض أو تأجيل قسط المساعدة السكنية',
+		        N'إعادة جدولة المتأخرات للمساعدة السكنية',
+		        N'طلب الإستلام الإبتدائي للمساكن الفردية',
+		        N'طلب الغاء المساعدة السكنية',
+		        N'طلب زيارة طارئة لمسكن',
+		        N'طلب التصرف في مسكن'
+            ) THEN 'Yes'
+            ELSE 'No'
+        END AS IsPmo_Confirmed
+    FROM
+        moeidw.dbo.eservices_szhp
+    WHERE
+        -- Filter out invalid Statuses
+        CurrentStateAra IS NOT NULL
+        AND CurrentStateAra &lt;&gt; N'فريق التطوير'
+)
+SELECT
+    AppStartDate,
+    ApplicationNumber,
+    Created,
+    Modified,
+    DeviceType,
+    BackOfficeEmployee,
+    IPAddress,
+    CreatedYear,
+    Status,
+    ServiceName,
+    EntityName,
+    KPI_Days,
+    NationalID,
+    Nationality,
+    IsPmo_Confirmed,
+    Hour
+FROM
+    TransformedData;</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MOEI]"
+                  connectionManagerRefId="Package.ConnectionManagers[MOEI]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[AppStartDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AppStartDate]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[AppStartDate]"
+                      name="AppStartDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ApplicationNumber]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ApplicationNumber]"
+                      length="101"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ApplicationNumber]"
+                      name="ApplicationNumber"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Created]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Created]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Created]"
+                      name="Created"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Modified]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Modified]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Modified]"
+                      name="Modified"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[DeviceType]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DeviceType]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[DeviceType]"
+                      name="DeviceType"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[BackOfficeEmployee]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[BackOfficeEmployee]"
+                      length="150"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[BackOfficeEmployee]"
+                      name="BackOfficeEmployee"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IPAddress]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IPAddress]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IPAddress]"
+                      name="IPAddress"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreatedYear]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CreatedYear]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[CreatedYear]"
+                      name="CreatedYear"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Status]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Status]"
+                      length="300"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Status]"
+                      name="Status"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ServiceName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ServiceName]"
+                      length="250"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ServiceName]"
+                      name="ServiceName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[EntityName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EntityName]"
+                      length="25"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[EntityName]"
+                      name="EntityName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[KPI_Days]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KPI_Days]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[KPI_Days]"
+                      name="KPI_Days"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[NationalID]"
+                      dataType="i8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NationalID]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[NationalID]"
+                      name="NationalID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nationality]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Nationality]"
+                      length="3"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nationality]"
+                      name="Nationality"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IsPmo_Confirmed]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IsPmo_Confirmed]"
+                      length="3"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[IsPmo_Confirmed]"
+                      name="IsPmo_Confirmed"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hour]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Hour]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Hour]"
+                      name="Hour"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[AppStartDate]"
+                      dataType="dbTimeStamp"
+                      name="AppStartDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ApplicationNumber]"
+                      dataType="wstr"
+                      length="101"
+                      name="ApplicationNumber" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Created]"
+                      dataType="dbTimeStamp"
+                      name="Created" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Modified]"
+                      dataType="dbTimeStamp"
+                      name="Modified" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[DeviceType]"
+                      dataType="wstr"
+                      length="50"
+                      name="DeviceType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[BackOfficeEmployee]"
+                      dataType="wstr"
+                      length="150"
+                      name="BackOfficeEmployee" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IPAddress]"
+                      dataType="wstr"
+                      length="50"
+                      name="IPAddress" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[CreatedYear]"
+                      dataType="i4"
+                      name="CreatedYear" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Status]"
+                      dataType="wstr"
+                      length="300"
+                      name="Status" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ServiceName]"
+                      dataType="wstr"
+                      length="250"
+                      name="ServiceName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EntityName]"
+                      dataType="wstr"
+                      length="25"
+                      name="EntityName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[KPI_Days]"
+                      dataType="i4"
+                      name="KPI_Days" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[NationalID]"
+                      dataType="i8"
+                      name="NationalID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Nationality]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="Nationality" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[IsPmo_Confirmed]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      name="IsPmo_Confirmed" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Hour]"
+                      dataType="i4"
+                      name="Hour" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AppStartDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[AppStartDate]"
+                      name="AppStartDate" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ApplicationNumber]"
+                      dataType="wstr"
+                      length="101"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ApplicationNumber]"
+                      name="ApplicationNumber" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Created]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Created]"
+                      name="Created" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Modified]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Modified]"
+                      name="Modified" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DeviceType]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[DeviceType]"
+                      name="DeviceType" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[BackOfficeEmployee]"
+                      dataType="wstr"
+                      length="150"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[BackOfficeEmployee]"
+                      name="BackOfficeEmployee" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IPAddress]"
+                      dataType="wstr"
+                      length="50"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IPAddress]"
+                      name="IPAddress" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CreatedYear]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[CreatedYear]"
+                      name="CreatedYear" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Status]"
+                      dataType="wstr"
+                      length="300"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Status]"
+                      name="Status" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ServiceName]"
+                      dataType="wstr"
+                      length="250"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ServiceName]"
+                      name="ServiceName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EntityName]"
+                      dataType="wstr"
+                      length="25"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EntityName]"
+                      name="EntityName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KPI_Days]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[KPI_Days]"
+                      name="KPI_Days" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NationalID]"
+                      dataType="i8"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[NationalID]"
+                      name="NationalID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Nationality]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Nationality]"
+                      name="Nationality" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IsPmo_Confirmed]"
+                      codePage="1252"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[IsPmo_Confirmed]"
+                      name="IsPmo_Confirmed" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Hour]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Hour]"
+                      name="Hour" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task"
+          TopLeft="268.333318672247,142.133332344956" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Data Flow Task\OLE DB Source"
+          TopLeft="364.999994561076,71.9999989271164" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Data Flow Task\Flat File Destination"
+          TopLeft="377.999994367361,411.999993860722" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="440.999994561076,113.599998927116">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="22.1999998062849,298.399994933605"
+              Start="0,0"
+              End="22.1999998062849,290.899994933605">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,145.199997466803" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,145.199997466803"
+                    Point2="0,149.199997466803"
+                    Point3="4,149.199997466803" />
+                  <mssgle:LineSegment
+                    End="18.1999998062849,149.199997466803" />
+                  <mssgle:CubicBezierSegment
+                    Point1="18.1999998062849,149.199997466803"
+                    Point2="22.1999998062849,149.199997466803"
+                    Point3="22.1999998062849,153.199997466803" />
+                  <mssgle:LineSegment
+                    End="22.1999998062849,290.899994933605" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
