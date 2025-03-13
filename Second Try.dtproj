@@ -12,11 +12,11 @@
   <DataSourceViews />
   <DeploymentModelSpecificContent>
     <Manifest>
-      <SSIS:Project SSIS:ProtectionLevel="EncryptSensitiveWithUserKey" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
+      <SSIS:Project SSIS:ProtectionLevel="DontSaveSensitive" xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
         <SSIS:Properties>
           <SSIS:Property SSIS:Name="ID">{ff937897-0e71-4521-a8a1-fa6de5db0fee}</SSIS:Property>
           <SSIS:Property SSIS:Name="Name">Second Try</SSIS:Property>
-          <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
+          <SSIS:Property SSIS:Name="VersionMajor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionBuild">0</SSIS:Property>
           <SSIS:Property SSIS:Name="VersionComments">
@@ -26,7 +26,6 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DMC-AHMED</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeINlMzelK0er6xLjezhJ1AAAAAACAAAAAAAQZgAAAAEAACAAAADYmorGTrzvbf8zy90HpCGq0lXZBLCrl9EwZvc+Rc7wHQAAAAAOgAAAAAIAACAAAACslazix76VLJhrAsB+u0Nyg6IsLrQ+/Pv4rPPZ2tlDEZAAAAAB3M5jow4zIqqogc6o78lvrsdEuu1HXC7TaxpKACgRT2PpEOPUKpcNWr9oUdmCPWw7qa8fEnPVdQ2x82nywN/Y+kd1tXLEgRh/E1AEP4ZvkC6ZMpGhWdDphxkZI1OEBdPzI85TUPxFKwxmCRc/dhW/UmNBd9Ig7n70DXhRKczUuofwczMot3izM8SG9r7B0TlAAAAAy87EmWIl4IFo6bHBvdhsLSegZhXg09lEENkG2jdYDlkutJ6eoi10d4lQkFqsXGxUlsLydbrqEJdVwQTfZcDs+w==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,14 +41,14 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">4</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{C6F73C15-8687-4F1E-B7C6-78164E08E430}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{5CAA570C-BD3D-4AEF-81B7-D724480095E1}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
+                <SSIS:Property SSIS:Name="ProtectionLevel">0</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
                 <SSIS:Parameter SSIS:Name="CM.Flat File Connection Manager.AlwaysCheckForRowDelimiters">
@@ -214,6 +213,8 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">
+                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>

@@ -11,8 +11,9 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{C6F73C15-8687-4F1E-B7C6-78164E08E430}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{5CAA570C-BD3D-4AEF-81B7-D724480095E1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -185,8 +186,7 @@
           DTS:ConnectionString="Data Source=172.20.1.136;User ID=bbi.ahmed;Initial Catalog=;Provider=MSOLEDBSQL.1;Persist Security Info=False;Initial File Name=;Server SPN=;Authentication=;Access Token=;Application Name=SSIS-Package-{E657F559-4EEB-4802-991E-9F56B04BFB70}172.20.1.136.bbi.ahmed;Auto Translate=False;">
           <DTS:Password
             DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAeINlMzelK0er6xLjezhJ1AAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAjrk/uKVxbEyuSkJ0a4hE0+28RymHDiDDl8JmrZxHKSAAAAAAOgAAAAAIAACAAAADBaPvV1GDwuc1JMly9L8UxaapZHsg8KTJ9y3tRiNynPDAAAACm3E4eblxTufrTkupv6dVusfcNkl5YNbWMz0PuvnJaoL/IImigbA/NfX+4NyUmxelAAAAAjKBXsCgtvH+/4SMHZycD+3/GYhz3+f5o5R600R7loYTgA1512ErTzN2o08VuoplY6RlTL9Uu0fnuyqSv7NGKkA</DTS:Password>
+            Sensitive="1"></DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
